@@ -1,6 +1,7 @@
 const mongoose=require("mongoose");
+require('dotenv').config();
 
-const uri="mongodb+srv://lakshya:4JtflDhJG2vO6ZVt@cluster0.hmd3q.mongodb.net/inotebook?retryWrites=true&w=majority";
+let uri=process.env.URI;
 
  const connectToMongo=()=>{
          mongoose.connect(uri,(err)=>{
