@@ -7,6 +7,7 @@ let uri=process.env.URI;
          mongoose.connect(uri,(err)=>{
          if(err)
          {
+            console.log(err);
              console.log("Data base is not connected");
          }
          else
